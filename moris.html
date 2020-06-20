@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+	:root {
+		--primary-clr: ;
+		--second-clr: ;
+		--third-clr: ;
+		--accent-clr: ;
+		--shadow: 2px 3px 2px white;
+	}
+	html {
+		box-sizing: border-box;
+		font-size: 16px;
+	}
+	*,
+	*:before,
+	*:after {
+		margin: 0;
+		padding: 0;
+		box-sizing: inherit;
+		/*border: 1px dashed cyan;*/
+	}
+	.page-wrap {
+		position: relative;
+		top: 50px;
+		left: 0;
+	}
+	a { 
+		text-decoration: none;
+	}
+	/* navbar */
+	header {
+		position: fixed;
+		top: 0;
+		ledt: 0;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 2rem;
+		z-index: 1;
+		background: black;
+		/*box-shadow: var(--shadow);*/
+	}
+	.logo {
+		display: block;
+		height: 55px;
+		padding: 5px;
+	}
+	nav { 
+		display: flex;
+		align-items: center;
+	}
+	.nav-link {
+		display: block;
+		color: white;
+		padding: .5rem 1rem;
+		margin: 0 2px;
+		border-left: 1px solid white;
+		border-right: 1px solid white;
+		/*box-shadow: var(--shadow);*/
+		text-transform: uppercase;
+	}
+	
+	/* main */
+	.main-grid { 
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+	}
+	#intro {
+		grid-column: 1 / -1;
+		height: 50vh;
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+		background: black;
+	}
+	#intro h1 {
+		margin-left: 3rem;
+		font-size: 3rem;
+		text-decoration: underline;
+		color: white;
+	}
+	#intro p {
+		margin-left: 3rem;
+		font-size: 2rem;
+		color: white;
+	}
+	#features {
+		display: flex;
+		flex-flow: column wrap;
+		align-items: center;
+		grid-column: 1 / -1;
+		padding: 2rem 1rem;
+		background: black;
+	}
+	#features h2 {
+		font-size: 2rem;
+		color: white;
+	}
+	.feats-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		grid-gap: 10px;
+		margin: 2rem 0;
+	}
+	.feats {
+		background: #eee;
+		display: flex;
+		flex-flow: column wrap;
+		align-items: center;
+		padding: 1rem;
+		text-transform: uppercase;
+		border-radius: 10px;
+		box-shadow: var(--shadow);
+	}
+	.feats img {
+		width: 50%;
+		/*object-fit: cover;*/
+	}
+	.feats p { 
+		margin-top: 10px;
+		font-size: 1.5rem;
+	}
+	
+</style>
+<body>
+<div class="page-wrap">
+	<header>
+		<img class="logo" src="/storage/7B25-08ED/Unseen/moris.jpg" alt="logo">
+		<nav>
+			<a class="nav-link" href="#intro">home</a>
+			<a class="nav-link" href="#features">features</a>
+			<a class="nav-link" href="#products">products</a>
+			<a class="nav-link" href="#about">about</a>
+			<a class="nav-link" href="#contact">contact</a>
+		</nav>
+	</header>
+	<main class="main-grid">
+		<section id="intro">
+			<h1>Croman</h1>
+			<p>bring enlightenment for life</p>
+		</section><!-- intro end -->
+		<section id="features">
+			<h2>Features</h2>
+			<div class="feats-grid">
+			<div class="feats feat-1">
+				<img src="/storage/7B25-08ED/Unseen/light-bulb.svg" alt="energy saving">
+				<p>Energy Saving</p>
+			</div>
+			<div class="feats feat-2">
+				<img src="/storage/7B25-08ED/Unseen/shield.svg" alt="1yr guarantee">
+				<p>1yr Guarantee</p>
+			</div>
+			<div class="feats feat-3">
+				<img src="/storage/7B25-08ED/Unseen/eye-care.svg" alt="eye care">
+				<p>Eyes Comfort</p>
+			</div>
+			<div class="feats feat-4">
+				<img src="/storage/7B25-08ED/Unseen/low-prices.svg" alt="low prices">
+				<p>Best Prices</p>
+			</div>
+			<div class="feats feat-5">
+				<img src="/storage/7B25-08ED/Unseen/repeat.svg" alt="long life">
+				<p>Long life</p>
+			</div>
+			<div class="feats feat-6">
+				<img src="/storage/7B25-08ED/Unseen/rinse.svg" alt="???">
+				<p>???</p>
+			</div>
+			</div>
+		</section><!-- features end -->
+		<section id="products">
+			<h2>Products Range</h2>
+			<div class="showcase">
+				<img class="tile" src="" alt="led lamp var1">
+				<img class="tile" src="" alt="led lamp var2">
+				<img class="tile" src="" alt="cable var1">
+				<img class="tile" src="" alt="cable var2">
+				<img class="tile" src="" alt="insulator tapes">
+				<img class="tile" src="" alt="misc">
+			</div>
+		</section><!-- products end -->
+		<section id="about">
+			<h2>About Us</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. 
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</section><!-- about us end -->
+		<section id="contact">
+			<h2>Contact</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. 
+Ut enim ad minim veniam.</p>
+		</section><!-- contact end -->
+	</main><!-- main grid end -->
+	<footer>
+		<p>&copy;SoBadRDB 2020</p>
+	</footer>
+</div><!-- end page wrap -->
+</body>
+</html>
