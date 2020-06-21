@@ -18,7 +18,7 @@ html {
 body {
   font-family: Roboto, sans-serif;
   color: white;
-  background: url("https://res.cloudinary.com/sobadrdb/image/upload/v1592744999/blurred-background.jpg")
+  background: url("images/blurred-background.jpg")
     no-repeat center;
   background-size: cover;
   background-attachment: fixed;
@@ -91,7 +91,7 @@ nav {
   justify-content: center;
   height: 50vh;
   padding: 1rem;
-  background: url("https://res.cloudinary.com/sobadrdb/image/upload/v1592742940/red-lights-in-line.jpg")
+  background: url("images/red-lights-in-line.jpg")
     no-repeat center;
   background-size: cover;
   color: white;
