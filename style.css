@@ -39,6 +39,7 @@ section {
   padding: 2rem 1rem;
 }
 table {
+  display: block;
   table-layout: fixed;
   width: auto;
   font-size: inherit;
