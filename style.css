@@ -17,7 +17,7 @@ html {
 /* global */
 body {
   font-family: Roboto, sans-serif;
- /* background: url("https://res.cloudinary.com/sobadrdb/image/upload/v1592744999/blurred-background.jpg")
+  /*background: url("images/blurred-background.jpg")
     no-repeat center;
   background-size: cover;
   background-attachment: fixed;*/
@@ -25,7 +25,7 @@ body {
 .page-wrap {
   background: black;
   position: relative;
-  top: 60px;
+  top: 65px;
   left: 0;
 }
 a {
@@ -48,26 +48,90 @@ table {
   width: auto;
   font-size: inherit;
   border-collapse: collapse;
-  width: auto;
 }
-
-/*.main-grid {
-    display: grid;
-}*/
 
 /* navbar */
-.logo {
-  width: 100px;
-  max-height: 50px;
+.nav-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background: black;
+  border-bottom: 3px solid green;
+}
+.navbar {
+  display: flex;
+  width: 100%;
+  padding: .3rem .5rem;
+}
+.navbar img.logo {
+  display: block;
+  margin: auto;
+  width: auto;
+  max-height: 55px;
+}
+.navbar a:not(:first-child) {
+  display: block;
+  margin-top: auto;
+  padding: .5rem;
+  color: #eee;
+  font-size: 1.1rem;
+  text-align: center;
+}
+.navbar a:first-child {
+  margin-right: auto;
+}
+.navbar a.toggler {
+  display: none;
+}
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.navbar a:active {
+  background-color: #333;
+  color: #fff;
 }
 
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {
+    display: none;
+  }
+  .navbar a.toggler {
+    display: block;
+    margin-bottom: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.mobile {
+    position: relative;
+    flex-direction: column;
+  }
+  .navbar.mobile a.toggler {
+    position: absolute;
+    right: .5rem;
+    top: .5rem; 
+  }
+  .navbar.mobile a {
+    display: block;
+    text-align: left;
+  }
+}
+
+/* main grid 
+.main-grid {
+   display: grid;
+}
+*/
 /* intro  */
 .intro {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   padding: 1rem;
-  background: url("https://res.cloudinary.com/sobadrdb/image/upload/v1592742940/red-lights-in-line.jpg")
+  background: url("images/red-lights-in-line.jpg")
     no-repeat center;
   background-size: cover;
   color: white;
@@ -81,6 +145,16 @@ table {
 .intro p {
   font-size: 2rem;
 }
+
+@media screen and (max-width: 600px) {
+  .intro h1 {
+    font-size: 2.8rem;
+  }
+  .intro p {
+    font-size: 1.5rem;
+  }
+}
+
 #features {
   display: flex;
   flex-flow: column wrap;
