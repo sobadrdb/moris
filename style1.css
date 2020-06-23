@@ -148,17 +148,23 @@ table {
 }
 .feats-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
   margin: 2rem auto;
   width: 100%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 767px) {
   .feats-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
+@media screen and (min-width: 992px) {
+  .feats-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+}
+
 .feat {
   display: flex;
   flex-flow: column wrap;
