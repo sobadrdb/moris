@@ -17,12 +17,7 @@ html {
 /* global */
 body {
   background: #f2f6fa;
-  /*color: white;*/
   font-family: Roboto, sans-serif;
-  /*background: url("https://res.cloudinary.com/sobadrdb/image/upload/v1592744999/blurred-background.jpg")
-    no-repeat center;
-  background-size: cover;
-  background-attachment: fixed;*/
 }
 .page-wrap {
   position: relative;
@@ -39,10 +34,6 @@ h1 {
 h2 {
   font-size: 1.8rem;
   font-weight: 500;
-  /*color: white;*/
-}
-p {
- /* color: white;*/
 }
 section {
   padding: 2rem 1rem;
@@ -69,7 +60,7 @@ table {
 .navbar {
   display: flex;
   width: 100%;
-  padding: .3rem .5rem;
+  padding: 0.3rem 0.5rem;
 }
 .navbar img.logo {
   display: block;
@@ -80,7 +71,7 @@ table {
 .navbar a:not(:first-child) {
   display: block;
   margin-top: auto;
-  padding: .5rem;
+  padding: 0.5rem;
   color: #eee;
   font-size: 1.1rem;
   text-align: center;
@@ -117,8 +108,8 @@ table {
   }
   .navbar.mobile a.toggler {
     position: absolute;
-    right: .5rem;
-    top: .5rem; 
+    right: 0.5rem;
+    top: 0.5rem;
   }
   .navbar.mobile a {
     display: block;
@@ -132,6 +123,7 @@ table {
 }  */
 
 /* intro */
+
 .intro {
   display: flex;
   width: 100%;
@@ -145,34 +137,7 @@ table {
   margin: auto;
 }
 
-/*.intro {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  padding: 1rem;
-  background: url("https://res.cloudinary.com/sobadrdb/image/upload/v1592742940/red-lights-in-line.jpg")
-    no-repeat center;
-  background-size: cover;
-  color: white;
-  text-shadow: 3px 2px 1px black;
-  height: 100%;
-  min-height: 50vh;
-}
-.intro h1 {
-  font-size: 3rem;
-}
-.intro p {
-  font-size: 2rem;
-}
-
-@media screen and (max-width: 600px) {
-  .intro h1 {
-    font-size: 2.8rem;
-  }
-  .intro p {
-    font-size: 1.5rem;
-  }
-}*/
+/* featutes */
 
 #features {
   display: flex;
@@ -234,13 +199,12 @@ table {
 
 /* contact  */
 #contact {
-  background: linear-gradient( 120deg, rgb(68, 193, 68), rgb(122, 193, 67));
+  background: linear-gradient(120deg, rgb(68, 193, 68), rgb(122, 193, 67));
   border-top: 3px solid green;
   border-bottom: 3px solid green;
 }
 .moris {
   text-align: left;
- /* color: white; */
   padding: 1rem;
   font-size: 1.2rem;
   font-weight: 500;
