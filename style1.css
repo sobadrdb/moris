@@ -148,9 +148,16 @@ table {
 }
 .feats-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 2rem;
-  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-gap: 1rem;
+  margin: 2rem auto;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .feats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 .feat {
   display: flex;
@@ -169,7 +176,7 @@ table {
 }
 .feat p {
   margin-top: 1rem;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: black;
 }
 
