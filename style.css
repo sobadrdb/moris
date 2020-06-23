@@ -211,6 +211,11 @@ table {
 /* about */
 
 /* contact  */
+#contact {
+  background: linear-gradient( 120deg, rgb(68, 193, 68), rgb(122, 193, 67));
+  border-top: 3px solid green;
+  border-bottom: 3px solid green;
+}
 .moris {
   text-align: left;
   color: white;
