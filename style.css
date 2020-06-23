@@ -64,7 +64,7 @@ table {
   left: 0;
   width: 100%;
   z-index: 1;
-  background: black;
+  background: #333333;
   border-bottom: 3px solid green;
 }
 .navbar {
